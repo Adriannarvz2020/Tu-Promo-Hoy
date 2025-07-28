@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://adriannarvz2020.github.io/ofertasya/sitemap.xml

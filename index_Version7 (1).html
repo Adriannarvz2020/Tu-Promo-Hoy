@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>OfertasYa! | Las mejores ofertas, cupones y promociones actualizadas cada mes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OfertasYa! reúne las mejores ofertas, cupones y promociones de apps, ropa, comida y para estudiantes. Actualizado cada mes.">
+    <meta name="keywords" content="ofertas, cupones, promociones, apps, ropa, comida, estudiantes, Amazon, Shein, Walmart, Uber Eats">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://adriannarvz2020.github.io/ofertasya/">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f5f6fa; color: #333;}
+        header { background: #0074d9; color: white; padding: 1.5rem 0; text-align: center; }
+        nav { background: #fff; display: flex; justify-content: center; gap: 2rem; box-shadow: 0 2px 4px #eee; }
+        nav a { text-decoration: none; color: #0074d9; font-weight: bold; padding: 1rem 0.5rem; transition: color 0.2s; }
+        nav a:hover { color: #001f3f; }
+        main { max-width: 900px; margin: 2rem auto; padding: 1rem; background: #fff; border-radius: 14px; box-shadow: 0 3px 12px #ddd; }
+        section { margin-bottom: 2.5rem; }
+        h2 { border-left: 5px solid #0074d9; padding-left: 0.5rem; }
+        .oferta, .cupon, .app { background: #f2f2f2; border-radius: 8px; margin-bottom: 1rem; padding: 1rem; }
+        .oferta.destacada { border: 2px solid #0074d9; background: #eaf6ff; }
+        .botones-tiendas { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0; }
+        .boton-tienda { background: #0074d9; color: white; border: none; border-radius: 6px; padding: 0.7rem 1.5rem; cursor: pointer; font-size: 1em; transition: background 0.2s; }
+        .boton-tienda:hover { background: #005fa3; }
+        .categorias { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .categoria { background: #eaf6ff; border-radius: 8px; padding: 1rem; flex: 1 1 180px; text-align: center; font-weight: bold; }
+        .contacto { background: #eaf6ff; border-radius: 8px; padding: 1rem; max-width: 400px; margin: auto; }
+        @media (max-width: 650px) {
+            .categorias, .botones-tiendas { flex-direction: column; gap: 0.7rem; }
+            main { padding: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OfertasYa!</h1>
+        <p>¡Descubre las mejores ofertas de Apps, Ropa, Comida y para Estudiantes!</p>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#ofertas">Ofertas por tienda</a>
+        <a href="#cupones">Cupones del día</a>
+        <a href="#apps">Apps con promos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <div class="categorias">
+                <div class="categoria">Apps</div>
+                <div class="categoria">Ropa</div>
+                <div class="categoria">Comida</div>
+                <div class="categoria">Estudiantes</div>
+            </div>
+            <p>Bienvenido a <b>OfertasYa!</b>, tu sitio para encontrar las mejores promociones y cupones de tiendas populares. ¡Ahorra en tus compras diarias!</p>
+            <div class="botones-tiendas">
+                <button class="boton-tienda" onclick="window.open('https://www.amazon.com/', '_blank')">Amazon</button>
+                <button class="boton-tienda" onclick="window.open('https://www.walmart.com/', '_blank')">Walmart</button>
+                <button class="boton-tienda" onclick="window.open('https://www.shein.com/', '_blank')">Shein</button>
+                <button class="boton-tienda" onclick="window.open('https://www.ubereats.com/', '_blank')">Uber Eats</button>
+                <button class="boton-tienda" onclick="window.open('https://www.apple.com/app-store/', '_blank')">App Store</button>
+                <button class="boton-tienda" onclick="window.open('https://www.mercadolibre.com/', '_blank')">Mercado Libre</button>
+            </div>
+        </section>
+        <section id="ofertas">
+            <h2>Ofertas por tienda</h2>
+            <div id="ofertas-list"></div>
+        </section>
+        <section id="cupones">
+            <h2>Cupones del día</h2>
+            <div class="cupon">
+                <b>Walmart:</b> $150 MXN de descuento en compras mayores a $1000 MXN con el código <b>AHORRA150</b>.
+            </div>
+            <div class="cupon">
+                <b>Mercado Libre:</b> 10% de descuento en tecnología con el cupón <b>TECNO10</b>.
+            </div>
+        </section>
+        <section id="apps">
+            <h2>Apps con promos</h2>
+            <div class="app">
+                <b>Spotify:</b> 3 meses gratis para nuevos usuarios. <a href="https://www.spotify.com/" target="_blank">Ver promo</a>
+            </div>
+            <div class="app">
+                <b>Duolingo:</b> 50% descuento en Duolingo Plus para estudiantes. <a href="https://www.duolingo.com/" target="_blank">Ver promo</a>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto (opcional)</h2>
+            <div class="contacto">
+                <p>¿Tienes una oferta para compartir o alguna duda?</p>
+                <form>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                    <button type="submit" class="boton-tienda">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </
